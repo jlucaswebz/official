@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WinterJacket</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="hero">
+        <header>
+            <h2><strong>Winter</strong>Jacket</h2>
+        </header>
+
+        <div>
+            <h1>Hurtta</h1>
+            <h2>Winter Jacket</h2>
+
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vitae sed expedita, fugiat minima alias impedit atque dignissimos odio repudiandae consequatur rem, laboriosam harum quis itaque sapiente exercitationem necessitatibus aliquam.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vitae sed expedita, fugiat minima alias impedit atque dignissimos odio repudiandae consequatur rem, laboriosam harum quis itaque sapiente exercitationem necessitatibus aliquam.</li>
+            </ul>
+
+            <button>Buy for $68</button>
+        </div>
+    </div>
+
+    <section id="product" class="clearfix">
+        <img src="img/page-1_img02.jpg" alt="">
+        <div>
+            <h3>The Hurtta winter jacket is an efficient way of keeping the dog warm.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti maiores ex nisi, quaerat expedita pariatur blanditiis nemo. Adipisci ab dignissimos quia porro modi delectus praesentium, dicta eius, facere error!</p>
+        </div>
+    </section>
+    <section id="desc" class="clearfix">
+        <div>
+            <h3>The garment protects the dog's major muscle groups and tender abdomen area.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti maiores ex nisi, quaerat expedita pariatur blanditiis nemo. Adipisci ab dignissimos quia porro modi delectus praesentium, dicta eius, facere error!</p>
+        </div>
+        <img src="img/page-1_img03.jpg" alt="">
+    </section>
+    <section id="info">
+        <div>
+            <h3>Flexible, unobtrusive material</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quas, maiores in nulla expedita ipsam hic repellat nisi minima, quidem nobis officia sapiente quisquam. Ex nisi animi, consequuntur error neque!</p>
+        </div>
+    </section>
+    <section id="faq">
+        <h3>FAQs</h3>
+        <ul class="clearfix">
+            <li>Lorem ipsum dolor sit amet conse ctetur adipisicing</li>
+            <li>Tempor incididunt ut labore et dolorrure dolor</li>
+            <li>Ut enim ad minim veniam quis nostrud</li>
+            <li>Exercitation ullamco laboris nisi ut aliqui</li>
+            <li>Ea commodo consequat duis aute</li>
+            <li>Reprehenderit in voluptate velit esse cillum dolore</li>
+        </ul>
+    </section>
+    <section id="gallery">
+        <div class="group">
+            <div>
+                <a href="">
+                    <img src="img/page-1_img04_original.jpg" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="img/page-1_img05_original.jpg" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="img/page-1_img06_original.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section></section>
+    <section></section>
+
+    <footer>
+        <h3>Get in Touch With Us</h3>
+        <address>4578 Marmora Road, Glasgow D04 89GR</address>
+        <div>
+            <a href="#">800-2345-678</a>
+            <a href="#">800-2345-679</a>
+        </div>
+        <div>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">skype</a>
+            <a href="#">google+</a>
+            <a href="#">instagram</a>
+            <a href="#">vimeo</a>
+        </div>
+        <p>Winter Jacket &copy; 2015.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+matt [1:52 PM]
+@everyone: 
+```$green: hsla(148, 75%, 43%, 1);
+$red: hsla(358, 79%, 45%, 1);
+$white: hsla(0, 0%, 91%, 1);
+$black: hsla(0, 0%, 8%, 1);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+#hero {
+    background-image: url(../img/page-1_img01.jpg);
+    background-size: cover;
+    color: $white;
+    div {
+        padding: 40px;
+    }
+    h1, h2 {
+        margin: 0;
+    }
+    header {
+        background-color: transparentize($black, .15);
+        text-align: center;
+    }
+    button {
+        background-color: $red;
+        color: $white;
+        padding: 15px 40px;
+        border: none;
+        font-size: 24px;
+        &:hover {
+            background-color: $green;
+        }
+    }
+}
+
+#product {
+    color: $white;
+    background-color: $green;
+    padding: 40px;
+    img, div {
+        width: 50%;
+        float: left;
+    }
+    div {
+        padding-left: 20px;
+    }
+}
+
+#desc {
+    padding: 40px;
+    img, div {
+        width: 50%;
+        float: left;
+    }
+    div {
+        padding-right: 20px;
+    }
+}
+
+#info {
+    background-image: url(../img/page-1_slide02.jpg);
+    background-size: cover;
+    padding: 40px 0;
+    div {
+        background-color: transparentize($white, .5);
+        padding: 20px 15%;
+    }
+}
+
+#faq {
+    padding: 40px;
+    li {
+        width: 50%;
+        float: left;
+        margin-bottom: 20px;
+        color: $green;
+    }
+}
+
+#gallery {
+    .group {
+        width: 300px;
+        div:first-of-type {
+            width: 150px;
+        }
+    }
+}
+
+
+footer {
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    padding: 40px;
+    h3, address, div {
+        margin-bottom: 20px;
+    }
+    div:first-of-type {
+        a {
+            color: $green;
+            font-weight: 900;
+        }
+    }
+    div:last-of-type {
+        a {
+            color: inherit;
+        }
+    }
+}

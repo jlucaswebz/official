@@ -1,0 +1,60 @@
+@import "clear";
+@import "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+$backBlue:#5ea3cb;
+$headBlue:#efefef;
+$letGrey:#acacac;
+$shadowGrey:#89a5ad;
+
+body, h1, h2, h3, ul{
+	 margin: 0;
+}
+span{
+
+	background-color: $backBlue;
+	box-sizing: border-box;
+	padding-left: 8px;
+	color: white;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: hsla(0, 0%, 5%, 1);
+}
+a{
+	text-decoration: none;
+	color:inherit;
+}
+header{
+		background-color: #ffffff;
+		position: relative;
+		display: block;
+		margin: 0;
+		padding:0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: top;
+
+	.row{
+		width: 100%;
+
+		.col-lg-3{
+			width: 25%;
+			margin-top: 20px;
+			padding-left: 20px;
+			text-align: left;
+			font-size: 36px;
+			color:$headBlue;
+			float: left;
+
+			.navContent{
+				width: 100%;
+			}
+		}
+
+			.col-lg-9{
+				width: 75%;
+				float: right;
+
+			}
+	}
+}

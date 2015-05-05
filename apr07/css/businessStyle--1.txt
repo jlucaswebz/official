@@ -1,0 +1,235 @@
+@import "reset";
+$backBlue:#5ea3cb;
+$headBlue:#efefef;
+$letGrey:#acacac;
+$shadowGrey:#89a5ad;
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body, h1, h2, h3, ul{
+	 margin: 0;
+}
+span{
+
+	background-color: $backBlue;
+	box-sizing: border-box;
+	padding-left: 8px;
+	color: white;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: hsla(0, 0%, 5%, 1);
+}
+a{
+	text-decoration: none;
+	color:inherit;
+}
+header{
+	background-color: #ffffff;
+	position: relative;
+	display: block;
+	margin: 0;
+	padding:0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: top;
+	nav{
+		&::before, &::after {
+            @extend %clearfix;
+           }
+           > span{
+	           	position: relative;
+	           	display: block;
+	           	padding:22px 12px;
+	           	margin: 0;
+	           	font-size: 18px;
+				background-color: $backBlue;
+				box-sizing: border-box;
+				line-height: 25px;
+				padding-left: 8px;
+				color: white;
+			}
+   
+		> a{
+			background-image:"..img/title_bg1.png";
+    		background-size: 10%;
+			font-size: 48px;
+			line-height: 125px;
+			outline: none !important;
+			padding: 10px;
+			}
+
+
+		ul{
+			float: right;
+			}	
+		li{
+			display: inline-block;
+			line-height: 30px;
+		a{
+			font-size: 24px;
+			line-height: 125px;
+			outline: none !important;
+			padding:5px;
+			}
+			}
+		}
+		
+#hero{
+	
+	height: 275px;
+	background-image: url(../img/p1_bg1.jpg);
+	background-size: cover;
+		color: white;
+
+	h1{
+		text-shadow:$shadowGrey 1px 1px 2px;
+		margin:16px;
+		padding-left: 15%;
+		padding-top: 1.5%;
+		font-size: 75px;
+		vertical-align: top;
+		opacity: 1;
+	}
+	h4{
+		margin:0;
+		text-shadow:$shadowGrey 1px 1px 2px;
+		padding-left: 15%;
+		font-size: 20px;
+		opacity: 1;
+	}
+  }
+}
+section{
+	vertical-align: top;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #e5e5e5;
+	height: auto;
+	border-bottom: 1px solid $letGrey;
+
+	h2{
+		text-transform: none;
+		text-align: center;
+		color:$backBlue;
+		font-size: 36px;
+		margin-top: 50px;
+		width: 100%;	
+	}
+	div{
+		width: 29%;
+		padding-top: 15px;
+		margin: 10px;
+		float: left;
+
+	h3, span{
+			background-image:url("http://fortawesome.github.io/Font-Awesome/icon/question/");
+			background-color: $backBlue;
+			display: block;
+         	padding:20px 12px;
+           	margin: 0;
+          	font-size: 18px;
+			line-height: 2px;
+			color: white;
+			border-bottom: 1px solid $letGrey;
+				//http://fortawesome.github.io/Font-Awesome/icon/random/
+		}
+		p{
+			margin-top: 25px;
+			color:$backBlue;
+			font-size: 14px;
+
+		}
+		p:last-of-type{
+
+			color:$letGrey;
+		}
+  }
+}
+section:first-of-type{
+		vertical-align: top;
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		border: 1px solid #e5e5e5;
+		height: auto;
+		
+	}
+
+section:nth-of-type(2){
+	vertical-align: top;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #e5e5e5;
+	height: auto;
+	div{
+		width: 100%;
+		h2{
+			width: 25%;
+			float: left;
+		}
+		p{
+			width: 75%;
+			padding-left: 30px;
+			float: right;
+		}
+	}
+
+}
+section:last-of-type{
+	vertical-align: top;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 2px solid #e5e5e5;
+	height: auto;
+	div{
+			width: 100%;
+			h2{
+				width: 25%;
+				float: left;
+			}
+			p{
+				width: 75%;
+				padding-left: 30px;
+				float: right;
+			}
+		}
+}
+footer{
+	&::before, &::after {
+            @extend %clearfix;
+           }
+	#social{
+		width: 100%;
+		p{
+			float: left;
+		}	
+		ul{
+
+			li{
+				float: right;
+				width: 33.3333%;
+				color: #acacac;
+				list-style: none;
+				padding: 0;
+				line-height: 1.5;
+			}
+	}
+   }
+}

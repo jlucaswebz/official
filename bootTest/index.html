@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<style type="text/css">
+
+  .div{
+	
+	..lev1 > div:first-of-type{
+		background-color: lime;
+	}
+	.lev1 > div:last-of-type{
+		background-color: green;
+	}
+
+	.lev2a > div:first-of-type{
+		background-color: darkpink;
+	}
+	.lev2a > div:last-of-type{
+		background-color: pink;
+	}
+	
+
+	.lev3a > div:first-of-type{
+		background-color: purple;
+	}
+	.lev3a > div:last-of-type{
+		background-color: darkpurple;
+	}
+
+	.lev3b > div:first-of-type{
+		background-color: lightpurple;
+	}
+	.lev3b > div{
+		ev3b >div:last-of-type{
+		background-color: lightblue;
+	}
+
+	.lev2b > div:last-of-type{
+		background-color: yellow;
+	}
+</style>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+	<div class="row lev1">
+		<div class="col-lg-12">
+			Large 1(Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorum dolore perspiciatis nam).
+			<div class="row lev2a">
+				<div class=" col-lg-6">
+				Large 2(Autem sequi eligendi nisi consequatur nobis dolore, libero minus, deleniti molestiae dolor, sapiente itaque aliquam unde iusto!).
+				</div>
+					<div class="row lev3a">
+						<div class="col-lg-4">Large 3(Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorum dolore perspiciatis nam. Autem sequi eligendi nisi consequatur nobis dolore, libero minus, deleniti molestiae dolor, sapiente itaque aliquam unde iusto!).
+						</div>
+						<div class=" col-lg-4">Large 3(Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorum dolore perspiciatis nam. Autem sequi eligendi nisi consequatur nobis dolore, libero minus, deleniti molestiae dolor, sapiente itaque aliquam unde iusto!).
+						</div>
+						<div class="col-lg-4">Large 3(Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorum dolore perspiciatis nam. Autem sequi eligendi nisi consequatur nobis dolore, libero minus, deleniti molestiae dolor, sapiente itaque aliquam unde iusto!).
+					</div>
+				<div class="col-lg-6">Large 2 (consectetur adipisicing elit. 	Doloribus dolorum dolore perspiciatis nam. Autem sequi eligendi nisi consequatur nobis dolore, libero minus, deleniti molestiae dolor, sapiente itaque aliquam unde iusto!).
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<div class="row">
+	<div class="med col-md-12">Med1
+		<div class="row">
+			<div class="med col-md-6">Med2
+					<div class="med col-md-4">Med3
+					</div>
+					<div class="med col-md-4">Med3
+					</div>
+					<div class="med col-md-4">Med 3
+					</div>
+				<div class="med col-md-6">Med2
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+<br>
+<br>
+<div class="row">
+	<div class="med col-sm-12">small 1
+		<div class="row">
+			<div class="med col-sm-6">small 2
+					<div class="med col-md-4">small 3
+					</div>
+					<div class="med col-md-4">small 3
+					</div>
+					<div class="med col-md-4">small 3
+					</div>
+				<div class="med col-md-6">small 2
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+<br>
+<br>
+		
+
+
+
+
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>    
+</body>
+</html>

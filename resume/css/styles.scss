@@ -1,0 +1,167 @@
+@import "reset";
+$brown: hsla(0,12%, 30%, 1);
+$green: hsla(99, 33%, 70%, 1);
+$bluegreen: hsla(171, 30%, 40%, 1);
+$red: hsla(0, 30%, 49%, 1);
+*,*::before, *::after{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Helvetica, sans-serif;
+	background-color: white;
+	width: 900px;
+	margin: 0, auto;
+	padding: 50px;
+	//text-align: center;
+
+}
+%clearFloats{
+	content: "";
+	display: block;
+	clear: both;
+}
+ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+header{
+	&::before,
+	&::after{
+	@extend %clearFloats;
+
+	}
+	h1{
+		color: $brown;
+		width: 50%;
+		float:left;
+		margin: 0;
+		text-align: center;
+		//font-size: 10vw;
+		font-size: 70px;
+	span{
+		font-size: 90px;
+		//font-size: 12vw;
+		}
+	}
+	address{
+		width: 50%;
+		float:right;
+		font-size: 26px;
+		line-height: 1.2;
+		border-left: 10px solid $green;
+		padding-left: 10px;
+	}
+}
+
+section{
+		margin: 20px 0 40px;
+	div{
+		position: relative;
+	}
+	div{
+		margin-bottom: 40px;
+	}
+	h2{
+		color: white;
+		font-size: 18px;
+		font-weight: 300;
+		white-space: nowrap;
+		padding: 0 40px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "times new roman", serif;
+		position: absolute;
+		background-color: teal;
+		margin: 0;
+		right: 100%;
+		transform: rotate(-90deg);
+		transform-origin: top right;
+	}
+	ul{
+		padding-left: 35px;
+
+	}
+	li{
+		line-height: 1.3;
+		margin-bottom: 10px;
+	}
+}
+section:first-of-type {
+	ul {
+		&::before,
+		&::after {
+			@extend %clearFloats;
+			}
+	li {
+		display: inline-block;
+		float: left;
+		width: 25%;
+		color: $bluegreen;
+		text-align: center;
+		font-weight: 700;
+		font-size: 22px;
+		}
+	}
+}
+section:nth-of-type(2) {	
+	>div {
+		width: 100%;
+	h2{
+		background-color: $green;
+
+		}
+	}
+}
+section:nth-of-type(3) {
+		&::before,
+		&::after {
+		@extend %clearFloats;
+		}
+	> div:first-of-type h2{
+		background-color: $red;
+	}
+	>div div:first-of-type h2{
+		background-color: $red;
+	}
+	
+	h2{
+		background-color: $bluegreen;
+	}
+	> div {
+		width: 33%;
+		float: left;
+
+	}
+	> div:last-of-type {
+		div h2 {
+			position: static;
+			transform:none;
+		}
+		ul{
+			padding-left: 0;
+		}
+
+	}
+}
+
+section:last-of-type {
+	&::before,
+	&::after {
+		@extend %clearFloats;
+			}
+	> div:first-of-type h2{
+		background-color: $red;
+	}
+	h2{
+		background-color: $brown;
+	}
+	> div {
+		width: 50%;
+		float: left;
+		}
+	> div div:last-child h2 {
+		background-color: $green;
+	}
+}

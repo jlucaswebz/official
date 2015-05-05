@@ -1,0 +1,56 @@
+@import "reset";
+$red:red;
+$blue:#000080;
+$purple:#8B008B;
+$yellow:yellow;
+$pink:#de5d83;
+$myColor:mix($pink,$blue,50%);
+$myAdjust:darken($blue, 40%);
+$myAdjHue:adjust-hue($purple, 75%);
+$myLine: 7px;
+
+body{
+	width:1024px;
+	padding-left: 45px;
+	padding-right: 75px;
+	background-color: $myColor;
+}
+// h2{
+// 		color:$pink;
+		
+// 	}
+// 	h3{
+// 		$myAdjHue:
+// 	}
+// #friends{
+// 	width: 800px;
+	
+// 	ul{
+// 		padding: 0;
+// 		margin: 0;
+// 	}
+// 	li::before,
+// 	li::after{
+// 	@extend %clearfix;
+// 	}
+
+// 	li div:first-of-type{
+// 				width: 300px;
+// 				float: left;
+// 			}
+
+// 	li div:last-of-type{
+// 				width: 250px;
+// 				float: left;
+// 			}
+
+// }
+
+
+#friends button{
+	@extend %button;
+}
+#friends img{
+	@extend %border;
+	@extend %header;
+}

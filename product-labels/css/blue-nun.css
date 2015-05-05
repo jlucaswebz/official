@@ -1,0 +1,47 @@
+*,* :before, *:after{
+	box-sizing:border-box;
+}
+.clearfix:before, 
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.product-label{
+	font-size: 18px;
+	font-family: sans-serif;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	list-style: none;
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+	color: black;
+	background-color: #9900ff;
+}
+
+img{
+	list-style: none;
+	width: auto;
+	padding-left:60px;
+}
+a: link{
+	color: #ff11cc;
+	text-decoration: none;
+}
+a:hover{
+	color:#cc11EE;
+}
+blockquote{
+	font-style: italic;
+}
+address{
+	text-align: center;
+}
+
+body{
+	background-color: #6622bb;
+}
