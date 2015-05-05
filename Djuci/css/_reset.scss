@@ -1,0 +1,49 @@
+*,* :before, *:after{
+	box-sizing:border-box;
+}
+.clearfix:before, 
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+%clearfix{
+	content: "";
+	display: block;
+	clear: both;
+
+}
+$black:black;
+$ltBlue:#A0FDFD;
+$blGrn:#0FFAB8;
+$dkPrpl: #4B0249;
+$ltPrpl:#FEC8F9;
+$myColor1: linear-gradient($ltPrpl, $black);
+$mySize:6px;
+$mySize2:16px;
+$myLineHt: 32px;
+$myBtnSize:108px;
+$myBtnColor:linear-gradient($ltBlue, $dkPrpl, $ltPrpl, $black);
+$myBtnFrame:18px;
+
+%border{
+	background-image:$myColor1;
+	border-top:$mySize;
+	border-left: $mySize;
+	border-right:$mySize;
+	border-bottom:$myLineHt;
+	border-width: $mySize2;
+}
+
+%button{
+	height: $myLineHt;
+	width: $myBtnSize;
+	border-radius: 15px;
+	background-image: $myBtnColor;
+	border-color: $black;
+	
+	
+}
+%header {
+	border-color: $myColor1;
+}

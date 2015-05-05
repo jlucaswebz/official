@@ -1,0 +1,239 @@
+@import "reset";
+@import "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+$backBlue:#5ea3cb;
+$headBlue:#efefef;
+$letGrey:#acacac;
+$shadowGrey:#89a5ad;
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body, h1, h2, h3, ul{
+	 margin: 0;
+}
+span{
+
+	background-color: $backBlue;
+	box-sizing: border-box;
+	padding-left: 8px;
+	color: white;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: hsla(0, 0%, 5%, 1);
+}
+a{
+	text-decoration: none;
+	color:inherit;
+}
+header{
+		background-color: #ffffff;
+		position: relative;
+		display: block;
+		margin: 0;
+		padding:0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: top;
+	nav{
+		&::before, &::after {
+            @extend %clearfix;
+           }
+        > span{
+	           	position: relative;
+	           	display: block;
+	           	padding:22px 12px;
+	           	margin: 0;
+	           	font-size: 18px;
+				background-color: $backBlue;
+				box-sizing: border-box;
+				line-height: 25px;
+				padding-left: 8px;
+				color: white;
+			}
+   
+		> a{
+			background-image:"..img/title_bg1.png";
+    		background-size: 10%;
+			font-size: 48px;
+			line-height: 125px;
+			outline: none !important;
+			padding: 10px;
+			}
+
+		ul{
+			float: right;
+			}	
+		li{
+			display: inline-block;
+			line-height: 30px;
+		a{
+			font-size: 24px;
+			line-height: 125px;
+			outline: none !important;
+			padding:5px;
+			}
+		}
+	}
+}
+#hero{
+	
+	height: 275px;
+	background-image: url(../img/p1_bg1.jpg);
+	background-size: cover;
+	color: white;
+
+	h1{
+		text-shadow:$shadowGrey 1px 1px 2px;
+		margin:16px;
+		padding-left: 15%;
+		padding-top: 1.5%;
+		font-size: 75px;
+		vertical-align: top;
+		opacity: 1;
+	    }
+	h4{
+		margin:0;
+		text-shadow:$shadowGrey 1px 1px 2px;
+		padding-left: 15%;
+		font-size: 20px;
+		opacity: 1;
+	}
+  }
+section{
+	&::before, &::after {
+            @extend %clearfix;
+           }
+	vertical-align: top;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #e5e5e5;
+	height: auto;
+	p{
+		color:$letGrey;
+	 }
+	h2{
+		text-transform: none;
+		text-align: center;
+		color:$backBlue;
+		font-size: 36px;
+		margin-top: 50px;
+		width: 100%;	
+	}
+div{
+		&::before, &::after {
+            @extend %clearfix;
+           }
+           padding-left: 25px;
+		width: 33%;
+		float: left;
+		text-align: left;
+	
+	.blueBox{
+			background-color: $backBlue;
+			height: 75px;
+			width: 90%;	
+			margin: 0 auto;
+		
+		span{
+				display: block;
+				width: 60px;
+				height: 60px;
+				float: left;
+		i{
+				font: normal normal 30px/1 FontAwesome;
+				font-size: 30px;
+				height: 60px;
+				padding-left: 15px;
+				padding-top: 125px;
+				color: white;
+				}
+			}
+		}
+		h3{
+				width: 90%;
+				height: 60px;
+				padding-top: 8px;
+				background-color: $headBlue;
+				display: block;
+				color: white;
+				float: right;
+			}
+			p{
+					color: $backBlue;
+				}
+			p:last-of-type{
+					color: $letGrey;
+				}
+	
+    }
+}
+
+.areU{
+			vertical-align: top;
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			border: 1px solid $headBlue;
+			height: auto;
+
+	
+}
+section:last-of-type{
+	vertical-align: top;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 2px solid #e5e5e5;
+	height: auto;
+
+
+	div{
+			width: 100%;
+			h2{
+				width: 25%;
+				float: left;
+			}
+			p{
+				width: 75%;
+				padding-left: 30px;
+				float: right;
+			}
+		}
+}
+footer{
+	&::before, &::after {
+            @extend %clearfix;
+           }
+	#social{
+		width: 100%;
+		p{
+			float: left;
+		}	
+		ul{
+
+			li{
+				float: right;
+				width: 33.3333%;
+				color: $letGrey;
+				list-style: none;
+				padding: 0;
+				line-height: 1.5;
+			}
+		}
+    }
+}
+

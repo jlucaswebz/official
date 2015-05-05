@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Index-Nav</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/ie_Styles.css">
+</head>
+<body>
+	<script>
+		var el = document.getElementsByTagName("body")[0];
+		el.className = "";
+	</script><noscript><!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]--></noscript>
+<header>	
+	<div id="container"  class="btmNavCon">
+	<div id="btmNav">
+		<ul id="btmNavUL">
+		  <li><a href="#"</a>Home</li>
+	      <li><a href="#"</a>About</li>
+	            <ul id="btmNavSubmenuUL">
+		          <li><a class="btmNavSubmenuLI" href="#">testimonials</a></li>
+		          <li><a class="btmNavSubmenuLI" href="#">archives</a></li>
+		          <li><a class="btmNavSubmenuLI" href="#"></a></li>
+		      </ul>
+	      <li><a href="#"</a>Profile</li>
+	        <ul id="btmNavSubmenuUL">
+	          <li><a class="btmNavSubmenuLI" href="#"></a>Prof 1</li>
+		          <li><a class="btmNavSubmenuLI" href="#"></a></li>
+		          <li><a class="btmNavSubmenuLI" href="#"></a></li>
+	        </ul>
+	      <li><a href="#"</a></li>
+	      <li><a href="#"</a></li>
+	    </ul>
+	</div>
+	</div>
+</header>
+
+
+	
+<section class="map">
+	<div id=""><div id="container" class="mapContainer">
+		
+	</div>
+</section>
+<footer>
+	
+</footer>
+
+
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script>
+	(function($){
+				
+		//cache nav
+		var nav = $("#topNav");
+				
+		//add indicators and hovers to submenu parents
+		nav.find("li").each(function() {
+			if ($(this).find("ul").length > 0) {
+				
+				$("<span>").text("^").appendTo($(this).children(":first"));
+
+				//show subnav on hover
+				$(this).mouseenter(function() {
+					$(this).find("ul").stop(true, true).slideDown();
+				});
+						
+				//hide submenus on exit
+				$(this).mouseleave(function() {
+					$(this).find("ul").stop(true, true).slideUp();
+				});
+			}
+		});
+	})(jQuery);
+</script>	 
+	</body>
+</html>

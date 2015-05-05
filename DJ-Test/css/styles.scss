@@ -68,6 +68,8 @@ ul, li{
 	height:auto;
 	margin:0;
 	padding:0;
+
+	
 	ul{
 		height:80px;
 		margin:20px;
@@ -77,15 +79,28 @@ ul, li{
 		font-size: 80%;
 	    font-family: sans-serif;
 
-	    a{
-    	text-decoration: none;
-		color: white; 
-   		 }	
+	    a, a:link{
+	    	text-decoration: none;
+			color: white; 
+			}
+		
+		a:focus, li{
+			background-color:black;
+			color:purple;
+			}
+		a:hover, li{
+			background-color:black;
+			color:purple;
+			}
+	
 		li{
 			color: white;
 			padding: 25px;
 			font-size:15px;
-			}
+
+		}
+		
+
 		li:first-of-type{
 			flex:3;
 			background-color: white;
@@ -230,57 +245,315 @@ ul, li{
 		background-color: $navRed;
 	}
 }
-.greenBxContainer{
+.twofourContainer{
 	width:auto;
 	height:auto;
-	margin:20px;
-	margin-top: 10px;
+	margin:0;
+	padding:0;
+	display:flex;
+	flex:auto;
+	flex-flow: column;
+
+	#box1{
+		width:100%;
+		height:500px;
+		margin:0;
+		padding:0;
+		background-image: url(../img/Depositphotos_7712645_original-1.jpg);
+		background-position: top center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-attachment: fixed;
+	h1, h2, h4{
+			text-align: center;
+			margin:0;
+			color: white;
+			font-family:Raleway;
+			font-weight:bold;
+	    }
+		
+	h1{
+		margin-top:50px;
+		font-size: 100px;
+		}
+	h2{
+		font-size: 75px;
+		
+		}
+	h4{
+		font-size: 40px;
+		}
+	}
+}
+.picsContainer{
+	width:auto;
+	height:auto;
+	margin:30px;
 	padding:0;
 	display:flex;
 	align-items: center;
 	color: white;
 
-
-	#box1{
-		text-align: center;
-		margin: 10px;
-		background-color: $navBlue;
+	p{
+		font-size: 10px;
+		color: $letGrey;
 		}
-	#box2{
-		text-align: center;
-		margin: 10px;
-		background-color: $navGreen;
+	h4{
+		color: $navPurple;
+		font-size: 20px;
+		font-family: Raleway;
+		text-align: center
+		}
+	img{
+		width:50%;
+		height:50%;
+		margin-top:15px;
+		background-size:25%;
+		background-position: center;
+		background-repeat:no-repeat;
+		border-radius: 50%;
 	}
-	#box3{
-		text-align: center;
-		margin: 10px;
-		background-color: $navYellow;
+	#box1, #box2, #box3{
+			width:100%;
+			height:100%;
+			margin:15px;
+			padding:0;
+			background-color: white;
+			text-align:center;
+			}
+}
+.greenContainer{
+	width:auto;
+	height:auto;
+	padding:0;
+	display:flex;
+	flex-flow:column;
+	background-color:$navGreen;
+	color: white;
+
+	#greenMain{
+		display:flex;
+		flex-flow:row;
+
+		#box1{
+			width: 100%;
+			height:150px;
+			margin: 10px;
+			background-image:url(../img/green-1.jpg);
+			background-size:100%;
+			background-position:center;
+			background-repeat: no-repeat;
+
+			}
+		#box2{
+			width: 100%;
+			height:150px;
+			margin: 10px;
+			background-image:url(../img/green-2.jpg);
+			background-size:100%;
+			background-position:center;
+			background-repeat: no-repeat;
+		}
+		#box3{
+			width: 100%;
+			height:150px;
+			margin: 10px;
+			background-image:url(../img/green-3a.jpg);
+			background-size:100%;
+			background-position:center;
+			background-repeat: no-repeat;
+			}
+		#box4{
+			width: 100%;
+			height:150px;
+			margin: 10px;
+			background-image:url(../img/green-4a.jpg);
+			background-size:100%;
+			background-position:center;
+			background-repeat: no-repeat;
+		}
 	}
 }
+	
+.green2Container{
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:0;
+	display:flex;
+	flex-flow:column;
+	background-color:$navGreen;
+	color: white;
+
+	#green2Main{
+		display:flex;
+		flex-flow:row;
+
+		#box5{
+			width: 100%;
+			height:150px;
+			margin: 10px;
+			background-image:url(../img/green-5a.jpg);
+			background-size:100%;
+			background-position:center;
+			background-repeat: no-repeat;
+			}
+		#box6{
+			width: 100%;
+			height:150px;
+			margin: 10px;
+			background-image:url(../img/green-6a.jpg);
+			background-size:100%;
+			background-position:center;
+			background-repeat: no-repeat;
+		}
+		#box7{
+			width: 100%;
+			height:150px;
+			margin: 10px;
+			background-image:url(../img/green-7a.jpg);
+			background-size:100%;
+			background-position:center;
+			background-repeat: no-repeat;
+		}
+		#box8{
+			width: 100%;
+			height:150px;
+			margin:0;
+			margin-top:8px;
+			background-color:$navYellow;
+			h2{
+				padding:0;
+				font-family:Raleway;
+				font-size:40px;
+				text-align:center;
+				color: white;
+				}	
+			}
+	}
+}
+
 .blogContainer{
 	width:auto;
 	height:auto;
-	margin:20px;
-	margin-top: 10px;
+	margin:0;
 	padding:0;
 	display:flex;
-	align-items: center;
+	flex-flow:column;
+	background-color:black;
 	color: white;
 
+	#blogMain{
+		display:flex;
+		flex-flow:row;
 
-	#box1{
-		text-align: center;
-		margin: 10px;
-		background-color: $navBlue;
+		#box1{
+			width:100%;
+			height:300px;
+			margin:10px;
+			margin-top:8px;
+			background-color:$navYellow;
+			display:flex;
+			flex-flow:column;
+
+			div{
+				width:90px;
+				height:90px;
+				margin:0;
+				margin-top:20px;
+				padding:0;
+				font-family:Raleway;
+				font-size:80px;
+				margin-left: 30px;
+				text-align:left;
+				color: $navPurple;
+			}
+			p:first-of-type{
+				margin:0;
+				padding:0;
+				margin-bottom:10px;
+				display: inline-block;
+				font-family:Raleway;
+				font-size:20px;
+				margin-left:50px;
+				text-align: center;
+				color: $navPurple;
+
+			}
+			h3{
+				margin:0;
+				padding:0;
+				font-family:Raleway;
+				font-size:20px;;
+				color: white;
+				}	
+			}
+		#box2{
+			width:100%;
+			height:250px;
+			margin:5px;
+			margin-top:8px;
+			background-image:url(../img/blog-1.jpg);
+			background-size:150%;
+			background-position:center;
+			background-repeat: no-repeat;
+			}
+}
+}
+.blog2Container{
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:0;
+	display:flex;
+	flex-flow:column;
+	background-color:black;
+	color: white;
+
+	#blog2Main{
+		display:flex;
+		flex-flow:row;
+
+		#box3{
+			width: 100%;
+			height:150px;
+			margin: 10px;
+			background-image:url(../img/blog-2.jpg);
+			background-size:100%;
+			background-position:center;
+			background-repeat: no-repeat;
 		}
-	#box2{
-		text-align: center;
-		margin: 10px;
-		background-color: $navGreen;
+		#box4{
+			width: 100%;
+			height:150px;
+			margin:0;
+			margin-top:8px;
+			background-color:$navYellow;
+			h2{
+				padding:0;
+				font-family:Raleway;
+				font-size:40px;
+				text-align:center;
+				color: white;
+				}	
+			}
 	}
-	#box3{
-		text-align: center;
-		margin: 10px;
-		background-color: $navYellow;
-	}
+}
+footer{
+	width:auto;
+	height:auto;
+	margin:0;
+	background-color:black;
+	color: $letGrey;
+
+	div{
+		width:100%;
+		height:50px;
+		margin:0;
+		margin-left:10px;
+		font-size:10px;
+		background-color:black;
+		color: $letGrey;
+		text-align:left;
+		}
 }
